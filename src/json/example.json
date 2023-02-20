@@ -1,0 +1,41 @@
+{
+  "posts": [
+    {
+      "date": "Aug 23, 2021",
+      "desc": "8 figma design systems that you can download for free",
+      "author": "John Doe"
+    },
+    {
+      "date": "Aug 21, 2021",
+      "desc": "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.",
+      "author": "Limpsump"
+    },
+    {
+      "date": "Aug 27, 2021",
+      "desc": "There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form,",
+      "author": "Limpsump"
+    }
+  ],
+  "category": [
+    {
+      "type": "Buussiness",
+      "img": "icons/icon_1.png",
+      "desc": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua"
+    },
+    {
+      "type": "Startup",
+      "img": "icons/icon_2.png",
+      "desc": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua"
+    },
+    {
+      "type": "Economy",
+      "img": "icons/icon_3.png",
+      "desc": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua"
+    },
+    {
+      "type": "Technology",
+      "img": "icons/icon_4.png",
+      "desc": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua"
+    }
+  ]
+}
