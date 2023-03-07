@@ -20,22 +20,45 @@
     {
       "type": "Buussiness",
       "img": "icons/icon_1.png",
-      "desc": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua"
+      "desc": "Lorem ipsum dolor sit amet, consectetur adipiscing elit."
     },
     {
       "type": "Startup",
       "img": "icons/icon_2.png",
-      "desc": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua"
+      "desc": "Lorem ipsum dolor sit amet, consectetur adipiscing elit."
     },
     {
       "type": "Economy",
       "img": "icons/icon_3.png",
-      "desc": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua"
+      "desc": "Lorem ipsum dolor sit amet, consectetur adipiscing elit."
     },
     {
       "type": "Technology",
       "img": "icons/icon_4.png",
-      "desc": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua"
+      "desc": "Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+    }
+  ],
+
+  "authors": [
+    {
+      "name": "Floyd Miles",
+      "job": "Content Writer @Company",
+      "profpict": "https://images.pexels.com/photos/9063624/pexels-photo-9063624.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+    },
+    {
+      "name": "Dianne Russel",
+      "job": "Content Writer @Company",
+      "profpict": "https://images.pexels.com/photos/774095/pexels-photo-774095.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+    },
+    {
+      "name": "Leslei Alexander",
+      "job": "Content Writer @Company",
+      "profpict": "https://images.pexels.com/photos/1572328/pexels-photo-1572328.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+    },
+    {
+      "name": "Jenny Wilson",
+      "job": "Content Writer @Company",
+      "profpict": "https://images.pexels.com/photos/1090387/pexels-photo-1090387.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
     }
   ]
 }

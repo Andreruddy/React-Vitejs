@@ -1,123 +1,138 @@
 import React from "react";
-import HeroImage from "../../assets/images/Hero.png";
-import FeatImg from "../../assets/images/feature_1.png";
-import exampleJson from "../../json/example.json";
+import exampleJson from "@/json/example.json";
+import StepByStep from "@/components/StepByStep";
+import Posts from "@/components/Posts";
+import Cols from "@/components/common/Cols";
+import FeatImg from "@/assets/images/feature_2.png";
+import Logo1 from "@/assets/images/Logo_1.png";
+import Logo2 from "@/assets/images/Logo_2.png";
+import Logo3 from "@/assets/images/Logo_3.png";
+import Logo4 from "@/assets/images/Logo_4.png";
+import Logo5 from "@/assets/images/Logo_5.png";
+import Logo6 from "@/assets/images/Logo_6.png";
+import Category from "@/components/Category";
+import Authors from "@/components/Authors";
+import Footer from "@/components/Footer";
+import Grid from "@/components/common/Grid";
 export default function Hero() {
   return (
     <div className="container-xl">
-      <div
-        className="w-full bg-center bg-cover h-auto"
-        style={{ backgroundImage: `url(${HeroImage})` }}
-      >
-        <div className="grid grid-rows-2 sm:grid-rows-1 pl-10">
-          <div className="row-span-1 w-1/2">
-            <div className="text-slate-200 py-14">
-              <h3 className=" text-base uppercase tracking-widest">
-                posted on <span className="font-semibold">startup</span>
-              </h3>
-              <h1 className="text-5xl font-semibold py-5">
-                Step-by-step guide to choosing great font pairs
-              </h1>
-              <p className="pb-5">
-                By : <span className="text-yellow-400">James West</span> | May
-                23, 2022
-              </p>
-              <p>
-                Duis aute irure dolor in reprehenderit in voluptate velit esse
-                cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
-                cupidatat non proident.
-              </p>
-            </div>
-            <button className="bg-yellow-300 px-10 py-3 my-28 font-bold">
-              Read More >
-            </button>
-          </div>
-        </div>
-      </div>
-      <div className="container py-5">
-        <div className="grid grid-cols-2 gap-4">
+      <StepByStep />
+      <Posts />
+      <Cols className="bg-[#F4F0F8] p-24">
+        <div className="col-span-6 w-[515] pr-16">
           <div>
-            <h1 className="text-slate-700 text-lg font-bold pb-10">
-              Feature Post
-            </h1>
-            <div className="w-full h-auto pl-5">
-              <img src={FeatImg} alt="feature Image" />
-            </div>
-          </div>
-          <div>
-            <div className="flex justify-between">
-              <h1 className="text-slate-700  text-lg font-bold pb-10">
-                All Post
-              </h1>
-              <a href="#">View All</a>
-            </div>
-            <div className="pl-5">
-              {exampleJson.posts.map((item, i) => {
-                return (
-                  <div key={i} className="p-4 hover:bg-pink-200">
-                    <p className="text-slate-400">
-                      By {item.author} | {item.date}
-                    </p>
-                    <h3 className="font-bold">{item.desc}</h3>
-                  </div>
-                );
-              })}
-            </div>
-          </div>
-        </div>
-      </div>
-      <div className="container py-5 bg-slate-200">
-        <div className="grid grid-cols-2 gap-8 my-5">
-          <div className="pr-3 mr-14">
-            <div className="tracking-widest pb-4">
-              <h2 className="font-semibold">About us</h2>
-            </div>
-            <h3 className="font-bold text-4xl pb-4">
-              We are community of content writers who share their learnings
+            <h2 className="uppercase font-semibold tracking-widest pb-4">
+              about us
+            </h2>
+            <h3 className="text-4xl font-bold pb-4 text-justify">
+              We are a community of content writers who share their learnings
             </h3>
-            <p className="text-slate-500">
-              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Cumque
-              similique quam, eaque ratione temporibus odio unde repudiandae
-              officia culpa officiis.
+            <p className="text-slate-400 py-4">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              eiusmod tempor incididunt ut labore et dolore magna aliqua.
             </p>
+            <a href="#" className="font-bold text-lg text-purple-800">
+              Learn More >
+            </a>
           </div>
-          <div className="pr-3 mr-14">
-            <div className="tracking-widest pb-4">
-              <h2 className="font-semibold">Our Mission</h2>
-            </div>
-            <h3 className="font-bold text-3xl pb-4">
+        </div>
+        <div className="col-span-6">
+          <div>
+            <h2 className="uppercase font-semibold tracking-widest pb-4">
+              our mission
+            </h2>
+            <h3 className="text-2xl font-bold pb-4">
               Creating valuable content for creatives all around the world
             </h3>
-            <p className="text-slate-500">
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-              Repellat, numquam reprehenderit esse quaerat odio voluptatum et
-              perspiciatis natus eaque vero dolorum sequi quasi, officiis magnam
-              eligendi eum, nihil pariatur rem.
+            <p className="text-slate-400 py-4">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+              enim ad minim veniam, quis nostrud exercitation ullamco laboris
+              nisi ut aliquip ex ea commodo consequat.
             </p>
           </div>
         </div>
-        <a href="#" className="text-purple-700 font-bold">
-          Read More >
-        </a>
+      </Cols>
+      <div className="pt-32">
+        <h1 className="text-4xl font-bold text-center">Choose A Category</h1>
       </div>
-      <div className="container">
-        <div className="flex justify-center">
-          <h1 className="text-3xl font-bold">Choose A Category</h1>
+      <Cols>
+        {exampleJson.category.map((item, i) => {
+          let dd = i < 4 ? "mr-3" : "";
+          console.log(dd);
+          return (
+            <Category
+              className={`${dd}`}
+              key={i}
+              img={item.img}
+              type={item.type}
+              desc={item.desc}
+            />
+          );
+        })}
+      </Cols>
+      <Cols className="pt-32">
+        <div className="col-span-8">
+          <img src={FeatImg} className="w-[949px] relative" alt="feture 2" />
         </div>
-        <div className="div grid grid-cols-4 gap-4">
-          {exampleJson.category.map((item, i) => {
-            return (
-              <div key={i} className="flex justify-center">
-                <div className="w-60 border-slate-700">
-                  <div className="w-12 bg-pink-200 p-3 rounded-md">
-                    <img src={item.img} alt="icon_1" />
-                  </div>
-                </div>
-              </div>
-            );
-          })}
+        <div className="col-span-6">
+          <div className="content absolute">
+            <h2 className="uppercase font-semibold tracking-widest pb-4">
+              why we started
+            </h2>
+          </div>
         </div>
+      </Cols>
+      <div className="pt-32">
+        <h1 className="text-4xl font-bold text-center">List of Authors</h1>
       </div>
+      <Cols>
+        {exampleJson.authors.map((item, i) => {
+          let dd = i < 4 ? "mr-3" : "";
+          return (
+            <Authors
+              className={`${dd}`}
+              key={i}
+              img={item.profpict}
+              name={item.name}
+              company={item.job}
+            />
+          );
+        })}
+      </Cols>
+      <Cols>
+        <div className="col-span-12 self-center text-center w-[414px]">
+          <h1 className="text-3xl font-bold">
+            Join our team to be a apart of our story
+          </h1>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+            eiusmod tempor incididunt.
+          </p>
+        </div>
+      </Cols>
+      <Cols>
+        <div className="col-span-2">
+          <img src={Logo6} className="w-32" alt="" />
+        </div>
+        <div className="col-span-2">
+          <img src={Logo1} className="w-32" alt="" />
+        </div>
+        <div className="col-span-2">
+          <img src={Logo2} className="w-32" alt="" />
+        </div>
+        <div className="col-span-2">
+          <img src={Logo3} alt="" className="w-32" />
+        </div>
+        <div className="col-span-2">
+          <img src={Logo4} alt="" className="w-32" />
+        </div>
+        <div className="col-span-2">
+          <img src={Logo5} alt="" className="w-32" />
+        </div>
+      </Cols>
+      <Footer />
     </div>
   );
 }

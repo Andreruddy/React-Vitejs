@@ -1,3 +1,4 @@
+import Button from "@/components/common/Button";
 import React from "react";
 export default function Navbar() {
   const listMenu = ["Home", "Blog", "About Us", "Contact Us"];
@@ -23,9 +24,9 @@ export default function Navbar() {
                 );
               })}
               <li>
-                <button className="bg-white md:px-7 md:py-2 mt-2 font-semibold  block text-slate-800">
+                <Button variant="white" className="py-3 px-7 mt-1">
                   Subscribe
-                </button>
+                </Button>
               </li>
             </ul>
           </div>
