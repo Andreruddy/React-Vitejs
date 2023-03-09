@@ -1,8 +1,12 @@
 import React from "react";
-import Button from "../common/Button";
-
+import Button from "@/components/common/Button";
+import facebook from "@/assets/images/facebook.svg";
+import instagram from "@/assets/images/instagram.svg";
+import linkedin from "@/assets/images/linkedin.svg";
+import twitter from "@/assets/images/twitter.svg";
 export default function Footer() {
   const listMenu = ["Home", "Blog", "About Us", "Contact Us", "Privacy Policy"];
+  const socmed = [facebook, twitter, instagram, linkedin];
   return (
     <div className="container-xl w-full">
       <header>
@@ -33,7 +37,7 @@ export default function Footer() {
               </h1>
             </div>
             <div className="col-span-6 self-center">
-              <div className="justify-center  text-center">
+              <div className="justify-center text-center">
                 <input
                   className="mr-3 border-slate-400 bg-slate-600 appearance-none border w-72 py-2 px-3"
                   id="email"
@@ -51,8 +55,10 @@ export default function Footer() {
               <p>Finstreet 118 2561 Fintown</p>
               <p>Hello@finsweet.com 020 7993 2905</p>
             </div>
-            <div className="text-slate-500">
-              <h3>tested</h3>
+            <div className="text-slate-500 flex gap-5">
+              {socmed.map((item, i) => (
+                <img key={i} className="w-4 h-4" src={item} alt="" />
+              ))}
             </div>
           </div>
         </section>

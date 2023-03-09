@@ -43,22 +43,56 @@
     {
       "name": "Floyd Miles",
       "job": "Content Writer @Company",
-      "profpict": "https://images.pexels.com/photos/9063624/pexels-photo-9063624.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+      "desc": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+      "profpict": "https://images.pexels.com/photos/9063624/pexels-photo-9063624.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+      "address": "New York, USA"
     },
     {
       "name": "Dianne Russel",
       "job": "Content Writer @Company",
-      "profpict": "https://images.pexels.com/photos/774095/pexels-photo-774095.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+      "desc": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+      "profpict": "https://images.pexels.com/photos/774095/pexels-photo-774095.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+      "address": "New York, USA"
     },
     {
       "name": "Leslei Alexander",
       "job": "Content Writer @Company",
-      "profpict": "https://images.pexels.com/photos/1572328/pexels-photo-1572328.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+      "desc": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+      "profpict": "https://images.pexels.com/photos/1572328/pexels-photo-1572328.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+      "address": "New York, USA"
     },
     {
       "name": "Jenny Wilson",
       "job": "Content Writer @Company",
-      "profpict": "https://images.pexels.com/photos/1090387/pexels-photo-1090387.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+      "desc": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+      "profpict": "https://images.pexels.com/photos/1090387/pexels-photo-1090387.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+      "address": "New York, USA"
+    }
+  ],
+  "all_post": [
+    {
+      "themes": "startup",
+      "desc": "Desing tips for designers that cover everything you need",
+      "text": "Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident.",
+      "img": "src/assets/images/post-2.png"
+    },
+    {
+      "themes": "business",
+      "desc": "How to build rapport with your web design clients",
+      "text": "Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident.",
+      "img": "src/assets/images/post-3.png"
+    },
+    {
+      "themes": "technology",
+      "desc": "8 Figma design systems you can download for free today",
+      "text": "Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident.",
+      "img": "src/assets/images/post-4.png"
+    },
+    {
+      "themes": "economy",
+      "desc": "Font sizes in UI design: The complete guide to follow",
+      "text": "Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident.",
+      "img": "src/assets/images/post-2.png"
     }
   ]
 }

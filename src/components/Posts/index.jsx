@@ -7,7 +7,7 @@ import Button from "../common/Button";
 
 export default function Posts() {
   return (
-    <Cols>
+    <Cols className="my-32">
       <div className="col-span-7">
         <h2 className="font-bold text-2xl mb-5">Feature Post</h2>
         <div className="border-solid border-2 p-8">
